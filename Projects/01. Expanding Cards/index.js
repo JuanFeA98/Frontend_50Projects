@@ -1,13 +1,10 @@
-const cards = document.querySelectorAll('.card')
+const cards = document.querySelectorAll('.card');
 
-cards.forEach(card =>{
+cards.forEach(card=>{
     card.addEventListener('click', ()=>{
-        // Remove Class
-        cards.forEach(card =>{
-            card.classList.remove('card-selected')
+        cards.forEach(card=>{
+            card.classList.remove('card-activate')
         });
-
-        // Add Class
-        card.classList.add('card-selected')
+        card.classList.add('card-activate')
     })
 })
