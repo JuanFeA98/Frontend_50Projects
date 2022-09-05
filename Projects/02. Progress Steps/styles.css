@@ -5,10 +5,6 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body{
-    background: rgb(141, 219, 141);
-}
-
 .main{
     /* background: red; */
     width: 50%;
@@ -17,6 +13,7 @@ body{
 }
 
 .main .container{
+    position: relative;
     width: 80%;
     height: 100%;
     display: flex;
@@ -40,6 +37,30 @@ body{
     justify-content: center;
     align-items: center;
     border: 3px solid rgb(64, 186, 64);
+}
+
+.main .container .progess-bar{
+    background: rgb(131, 145, 135);
+    width: 50%;
+    height: 5px;
+    position: absolute;
+    top: calc(50% - 22px);    
+    z-index: -2;
+}
+
+.main .container .progess-bar-advance{
+    background: rgb(64, 186, 64);
+    width: 20%;
+    height: 3px;
+    position: absolute;
+    top: calc(50% - 21px);    
+    left: 25%;
+    z-index: -1;
+}
+
+.main .container .progess-bar-advance-active{
+    width: 50%;
+    background: red;
 }
 
 .main .container .control-panel{
